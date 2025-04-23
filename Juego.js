@@ -6,7 +6,7 @@ const opciones = [
 {opcion: 'tijera'} 
 ]
 let opcionElegida = prompt(`Ingrese una opcion ' piedra, papel o tijera ': `)
-let opcionRandom = opciones[Math.floor(Math.random() * opciones.length)];
+let opcionRandom = opciones[Math.floor(Math.random() * opciones.length)]; // Aqui agrega .opcion al final y luego en la función jugar podes quitarlo de todos lados
 const jugar = (OE, OR) =>{
 
     if (OE == OR.opcion){
